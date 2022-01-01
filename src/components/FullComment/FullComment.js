@@ -69,7 +69,7 @@ const FullComment = ({ commentId, setComments, setSelectedId }) => {
         <span className="wait">please wait...</span>
         <p>{comment.name}</p>
         <p>{comment.email}</p>
-        <p>{comment.content}</p>
+        <p>{comment.body}</p>
         <button className="btn-cancel" onClick={deleteHandler}>
           Delete
         </button>

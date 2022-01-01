@@ -75,7 +75,7 @@ const Discussion = () => {
           key={c.id}
           name={c.name}
           email={c.email}
-          content={c.content}
+          body={c.body}
           onClick={(e) => selectCommentHandler(c.id, e)}
         />
       ));

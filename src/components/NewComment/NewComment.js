@@ -9,7 +9,7 @@ const NewComment = ({ setComments }) => {
   const [comment, setComment] = useState({
     name: "",
     email: "",
-    content: "",
+    body: "",
   });
 
   const changeHandler = (e) => {
@@ -49,8 +49,8 @@ const NewComment = ({ setComments }) => {
         <input type="email" name="email" onChange={changeHandler} />
       </div>
       <div className="formControl">
-        <label>Content</label>
-        <input type="textarea" name="content" onChange={changeHandler} />
+        <label>body</label>
+        <input type="textarea" name="body" onChange={changeHandler} />
       </div>
       <button id="btnAdd" onClick={commentHandler}>
         Add Commnet

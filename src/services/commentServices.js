@@ -1,4 +1,5 @@
 import http from "./httpService";
+import instance from "../axiosInstance";
 
 export function getAllCommentsService() {
   return http.get("/comments");
@@ -13,5 +14,5 @@ export function addNewCommentService(data) {
 }
 
 export function deleteCommentService(commentId) {
-  return http.delete(`/comments/${commentId}`);
+  return instance.delete(`/comments/${commentId}`);
 }
