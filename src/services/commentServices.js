@@ -28,7 +28,8 @@ export function addNewCommentService(data) {
 
 //#region deleteCommentService
 export function deleteCommentService(commentId) {
-  return instance.delete(`/comments/${commentId}`);
+  return http.delete(`/comments/${commentId}`);
+  // return instance.delete(`/comments/${commentId}`);
 }
 //#endregion
 

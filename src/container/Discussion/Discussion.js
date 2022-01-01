@@ -53,7 +53,6 @@ const Discussion = () => {
   };
 
   const renderComments = () => {
-    console.log(comments);
     let renderedDataComments = (
       <p style={{ color: "#fff" }}>fetching all comments...</p>
     );
