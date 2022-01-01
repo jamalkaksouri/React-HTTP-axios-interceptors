@@ -1,6 +1,5 @@
 <p align="center">
-  <img src="https://github.com/jamalkaksouri/HttpWorking-reactjs-/blob/master/public/cover.png">
-  <img src="https://github.com/jamalkaksouri/HttpWorking-reactjs-/blob/master/public/cover2.png">
+  <img src="https://github.com/jamalkaksouri/React-HTTP-axios-interceptors/blob/master/public/cover.png">
 </p>
 
 
