@@ -75,4 +75,5 @@
   filter: blur(4px);
   visibility: visible;
   pointer-events: none;
+  user-select: none;
 }

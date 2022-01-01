@@ -1,40 +1,56 @@
-.fullComment {
+main {
+  margin: 20px 5px;
+}
+
+.editComment {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #cddc39;
-  width: 930px;
+  width: 455px;
   height: auto;
-  color: #000;
+  color: #000000;
   border-radius: 5px;
-  margin: 20px 0;
-  padding: 10px;
+  padding: 15px 0;
   border: 1px solid #78811f;
+  position: relative;
 }
 
-.btn-cancel {
+.formControl {
+  margin-bottom: 10px;
+}
+
+input {
+  border: 1px solid #666666;
+  padding: 4px 8px;
+  outline: none;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+button {
   padding: 10px 15px;
   outline: none;
-  color: #b53f3f;
+  color: #313507;
   background-color: transparent;
   border-radius: 5px;
-  border: 1px solid #b53f3f;
+  border: 1px solid #313507;
   margin-top: 10px;
   cursor: pointer;
   transition: 0.3s ease;
 }
 
-.btn-cancel:hover {
-  padding: 10px 15px;
-  outline: none;
-  color: #fff;
-  background-color: #b53f3f;
-  border-radius: 5px;
-  border: 1px solid #b53f3f;
-  margin-top: 10px;
-  cursor: pointer;
-  transition: 0.3s ease;
+button:hover {
+  color: #ffffff;
+  background-color: #31350738;
+}
+
+label {
+  margin-right: 10px;
+  display: flex;
 }
 
 .wait {
@@ -51,4 +67,10 @@
   visibility: visible;
   pointer-events: none;
   user-select: none;
+}
+
+.disableEdit {
+  filter: brightness(0.1);
+  user-select: none;
+  pointer-events: none;
 }

@@ -1,6 +1,6 @@
 section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 section.comments {
@@ -45,6 +45,7 @@ main {
   filter: blur(4px);
   visibility: visible;
   pointer-events: none;
+  user-select: none;
 }
 
 .lemon-btn {
@@ -59,4 +60,8 @@ button.lemon-btn:hover {
   background: #161616 !important;
   font-family: "vazir" !important;
   font-size: 14px !important;
+}
+
+.action-comment {
+  width: 930px;
 }

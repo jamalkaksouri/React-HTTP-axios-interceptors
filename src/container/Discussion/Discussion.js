@@ -5,6 +5,7 @@ import NewComment from "../../components/NewComment/NewComment";
 import "./discussion.css";
 import { toast, Bounce } from "react-toastify";
 import { getAllCommentsService } from "./../../services/commentServices";
+import EditComment from "../../components/EditComment/EditComment";
 
 const Discussion = () => {
   const [comments, setComments] = useState(null);
@@ -79,7 +80,13 @@ const Discussion = () => {
           onClick={(e) => selectCommentHandler(c.id, e)}
         />
       ));
-    } else {
+    }
+    if (comments !== null && comments.length < 1) {
+      renderedDataComments = (
+        <p style={{ color: "#fff" }}>There are no comments! &#128533;</p>
+      );
+    }
+    if (comments === null) {
       renderedDataComments = (
         <p style={{ color: "#fff" }}>There are no comments! &#128533;</p>
       );
@@ -98,8 +105,9 @@ const Discussion = () => {
           setSelectedId={setSelectedId}
         />
       </section>
-      <section>
+      <section className="action-comment">
         <NewComment setComments={setComments} />
+        <EditComment setComments={setComments} commentId={selectedId} />
       </section>
     </main>
   );
