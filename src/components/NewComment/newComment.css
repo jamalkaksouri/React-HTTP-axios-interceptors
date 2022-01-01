@@ -1,0 +1,69 @@
+main {
+  margin: 20px 5px;
+}
+
+.newComment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #cddc39;
+  width: 930px;
+  height: auto;
+  color: #000000;
+  border-radius: 5px;
+  padding: 15px 0;
+  border: 1px solid #78811f;
+  position: relative;
+}
+
+.formControl {
+  margin-bottom: 10px;
+}
+
+input {
+  border: 1px solid #666666;
+  padding: 4px 8px;
+  outline: none;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+button {
+  padding: 10px 15px;
+  outline: none;
+  color: #3f51b5;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #3f51b5;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  color: #ffffff;
+  background-color: #4338ca;
+}
+
+label {
+  margin-right: 10px;
+  display: flex;
+}
+
+.wait {
+  position: absolute;
+  z-index: 999;
+  filter: drop-shadow(2px 4px 6px black) !important;
+  color: #000;
+  font-size: 18px;
+  visibility: hidden;
+}
+
+.bluray > * {
+  filter: blur(4px);
+  visibility: visible;
+  pointer-events: none;
+}

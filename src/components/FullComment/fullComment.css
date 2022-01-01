@@ -1,0 +1,53 @@
+.fullComment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #cddc39;
+  width: 930px;
+  height: auto;
+  color: #000;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #78811f;
+}
+
+.btn-cancel {
+  padding: 10px 15px;
+  outline: none;
+  color: #b53f3f;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #b53f3f;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-cancel:hover {
+  padding: 10px 15px;
+  outline: none;
+  color: #fff;
+  background-color: #b53f3f;
+  border-radius: 5px;
+  border: 1px solid #b53f3f;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.wait {
+  position: absolute;
+  z-index: 999;
+  filter: drop-shadow(2px 4px 6px black) !important;
+  color: #000;
+  font-size: 18px;
+  visibility: hidden;
+}
+
+.bluray > * {
+  filter: blur(4px);
+  visibility: visible;
+  pointer-events: none;
+}
