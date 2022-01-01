@@ -1,16 +1,3 @@
 {
-  "comments": [
-    {
-      "name": "",
-      "email": "",
-      "body": "",
-      "id": 1
-    },
-    {
-      "name": "",
-      "email": "",
-      "body": "",
-      "id": 2
-    }
-  ]
+  "comments": []
 }

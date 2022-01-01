@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:4000";
+axios.defaults.baseURL = "http://localhost:40002";
 // axios.defaults.baseURL = "https://jsonplaceholder.typicode.com";
 
 axios.defaults.timeout = 5000;
