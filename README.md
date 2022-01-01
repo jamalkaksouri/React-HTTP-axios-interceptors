@@ -15,7 +15,7 @@
 2. In terminal(in vs-code) enter `npm start` or `yarn start`
 3. In another terminal enter `json-server --watch data/db.json --port 3006` for run local database.(if port 3006 is bussy, change it)
 
-# If want to use default base url for a specific component changes below function:
+# If want to use the default base URL for a specific component using the below function
 
 ```javascript
 import axios from "axios";
