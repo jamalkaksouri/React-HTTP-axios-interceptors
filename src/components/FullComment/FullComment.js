@@ -41,7 +41,7 @@ const FullComment = ({ commentId, setComments, setSelectedId }) => {
         const { data } = await getAllCommentsService();
 
         if (data.length === 0) {
-          setComments(null);
+          setComments([]);
           setSelectedId(null);
           setComment(null);
         } else {

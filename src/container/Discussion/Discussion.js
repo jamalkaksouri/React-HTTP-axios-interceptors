@@ -21,26 +21,27 @@ const Discussion = () => {
   //? 4xx => 401: unAuthorized, 402, 403 => notAccess, 404 => notFound
   //? 5xx => serverSide
 
+  const getComments = async () => {
+    try {
+      const { data } = await getAllCommentsService();
+      setComments(data);
+    } catch (error) {
+      setError(error);
+      toast.error(error.message, {
+        position: "bottom-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        transition: Bounce,
+        theme: "dark",
+      });
+    }
+  };
+
   useEffect(() => {
-    const getComments = async () => {
-      try {
-        const { data } = await getAllCommentsService();
-        setComments(data);
-      } catch (error) {
-        setError(error);
-        toast.error(error.message, {
-          position: "bottom-right",
-          autoClose: 3000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          transition: Bounce,
-          theme: "dark",
-        });
-      }
-    };
     getComments();
   }, []);
 
@@ -52,6 +53,7 @@ const Discussion = () => {
   };
 
   const renderComments = () => {
+    console.log(comments);
     let renderedDataComments = (
       <p style={{ color: "#fff" }}>fetching all comments...</p>
     );
@@ -70,7 +72,8 @@ const Discussion = () => {
           </button>
         </div>
       );
-    } else if (comments && !error) {
+    }
+    if (comments && !error) {
       renderedDataComments = comments.map((c) => (
         <Comment
           key={c.id}
@@ -81,12 +84,7 @@ const Discussion = () => {
         />
       ));
     }
-    if (comments !== null && comments.length < 1) {
-      renderedDataComments = (
-        <p style={{ color: "#fff" }}>There are no comments! &#128533;</p>
-      );
-    }
-    if (comments === null) {
+    if (comments && comments.length < 1) {
       renderedDataComments = (
         <p style={{ color: "#fff" }}>There are no comments! &#128533;</p>
       );
