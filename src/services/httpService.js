@@ -3,7 +3,7 @@ import axios from "axios";
 axios.defaults.baseURL = "http://localhost:4000";
 // axios.defaults.baseURL = "https://jsonplaceholder.typicode.com";
 
-axios.defaults.timeout = 5000;
+axios.defaults.timeout = 5001;
 
 // axios.defaults.headers.common["Authorization"] = "AUTH_TOKEN";
 
