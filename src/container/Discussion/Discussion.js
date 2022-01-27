@@ -95,7 +95,7 @@ const Discussion = () => {
   return (
     <main>
       <section className="comments">{renderComments()}</section>
-      <section className="fullcom">
+      {/* <section className="fullcom">
         <FullComment
           commentId={selectedId}
           setComments={setComments}
@@ -105,7 +105,7 @@ const Discussion = () => {
       <section className="action-comment">
         <NewComment setComments={setComments} />
         <EditComment setComments={setComments} commentId={selectedId} />
-      </section>
+      </section> */}
     </main>
   );
 };
